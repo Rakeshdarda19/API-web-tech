@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product_Id</th>
+                <th>Product_Type</th>
+                <th>Product_name</th>
+                <th>Product_price</th>
+                <th>Available_qty</th>
+            </tr>
+        </thead>
+        <% records.forEach(function(row)%>
+        <tr>
+            <td><%= row.product_Id %></td>
+            <td><%= row.productType %></td>
+            <td><%= row.productName %></td>
+            <td><%= row.productPrice %></td>
+            <td><%= row.availableQty %></td>
+            
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
